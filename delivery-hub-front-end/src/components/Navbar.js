@@ -60,6 +60,14 @@ function Navbar() {
                             </Link>
                         </li>
 
+
+                        <li>
+                            <Link to='/tracker' className='nav-links'
+                                onClick={closeMobileMenu}>
+                                Tracker
+                            </Link>
+                        </li>
+
                         <li>
                             <Link to='/sign-up' className='nav-links-mobile'
                                 onClick={closeMobileMenu}>

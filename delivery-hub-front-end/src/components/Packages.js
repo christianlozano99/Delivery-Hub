@@ -30,6 +30,9 @@ export default class Packages extends Component {
                     <p>Expected: {
                         card_info.expected
                     }</p>
+                    <p class="location">Location: {
+                        card_info.location
+                    }</p>
                 </div>
             </div>
         )
@@ -44,17 +47,21 @@ export default class Packages extends Component {
                 id: 1,
                 packageItem: 'Iphone Protector',
                 currentStatus: 'Out for delivery',
-                expected: '12/25/2022'
+                expected: '12/25/2022',
+                location: "FORT WORTH TX DISTRIBUTION CENTER"
+
             }, {
                 id: 2,
                 packageItem: 'Air Freshener',
                 currentStatus: 'Delivered',
-                expected: '12/01/2022'
+                expected: '12/01/2022',
+                location: "Miami FL DISTRIBUTION CENTER"
             }, {
                 id: 3,
                 packageItem: 'Keurig',
                 currentStatus: 'Shipped',
-                expected: '11/30/2022'
+                expected: '11/30/2022',
+                location: "Orlando FL DISTRIBUTION CENTER"
             }
         ];
 

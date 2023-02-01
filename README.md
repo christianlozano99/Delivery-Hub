@@ -2,6 +2,8 @@
 Personal Project to centralize all your incoming packages.
 
 ![Capture](https://user-images.githubusercontent.com/55676291/199116630-06a970c2-01cf-494a-a0b4-6f2eca9a91ca.PNG)
+![image](https://user-images.githubusercontent.com/55676291/216073687-3dd6e9f3-e4ef-426c-ac04-6a5bf5362c7e.png)
+
 
 ## Done:
 - intergrate google maps api

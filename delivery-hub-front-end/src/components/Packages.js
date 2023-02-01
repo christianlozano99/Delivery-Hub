@@ -9,15 +9,16 @@ export default class Packages extends Component {
         var div = [];
 
         for (var i = 0; i < packages_data.length; i++) {
-            div[i] = this.createCard(packages_data[i]);
+            div[i] = this.createCard(packages_data[i], i);
         }
 
         return(div);
     }
 
-    createCard(card_info) {
+    createCard(card_info, i) {
         var card = (
-            <div class="card">
+            <div class="card"
+                key={i}>
                 <div class="container">
                     <h2>
                         <b>{

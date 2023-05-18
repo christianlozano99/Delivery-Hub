@@ -53,8 +53,14 @@ export default function Tracker() {
     const [markers, setMarkers] = useState([]);
     const [selectedMarker, setSelectedMarker] = useState(null);
 
-    useEffect(() => {
+
+    
+    const markerPlacer = () => {
         setMarkers(loadPackages());
+    };
+
+    useEffect(() => {
+        markerPlacer();
     }, []);
 
     if (!isLoaded) {
@@ -79,7 +85,7 @@ export default function Tracker() {
                     fullscreenControl: false
                 }}
             >
-                {markers}
+                {isLoaded && markers}
             </GoogleMap>
             <Packages markers={markers} selectedMarker={selectedMarker} setSelectedMarker={setSelectedMarker} />
         </Flex>
